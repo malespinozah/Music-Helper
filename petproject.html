@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Helper</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="pp.css">
+    <!-- Script -->
+    <script src="pp.js"></script>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/d04a5fbe66.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- App Name -->
+    <div id="appName">MusicHelper</div>
+
+    <!-- Container Playlists -->
+    <div id="container-playlists"> 
+
+        <!-- Playlist 1 -->
+        <div id="container-plist1">
+            <div id="pList">
+                <div class="cover-image"></div>
+                <div class="Pname">Relaxing me</div>
+    
+                <!-- Song List -->
+                <div class="LSongs">
+                    <div class="Songbox" id="song1">
+                    </div>
+                    <div class="Songbox" id="song2">
+                    </div>
+                    <div class="Songbox" id="song3">
+                    </div>
+                    <div class="Songbox" id="song4">
+                    </div>
+                </div>
+
+                <!-- Counter List -->
+                <div id="counter-list1">
+                    <div id="titleCounter">Time played</div>
+                    <div id="counter1">00:00:00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Playlist 2 -->
+        <div id="container-plist2">
+            <div id="pList">
+                <div class="cover-image"></div>
+                <div class="Pname">Thinking of you</div>
+                
+                <!-- Song List -->
+                <div class="LSongs">
+                    <div class="Songbox" id="song5">
+                    </div>
+                    <div class="Songbox" id="song6">
+                    </div>
+                    <div class="Songbox" id="song7">
+                    </div>
+                    <div class="Songbox" id="song8">
+                    </div>
+                </div>
+
+                 <!-- Counter List -->
+                <div id="counter-list2">
+                    <div id="titleCounter">Time played</div>
+                    <div id="counter2">00:00:00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Playlist 3 -->
+        <div id="container-plist3">
+            <div id="pList">
+                <div class="cover-image"></div>
+                <div class="Pname">Party night</div>
+                <div class="LSongs">
+    
+                    <!-- Song List -->
+                    <div class="Songbox" id="song9">
+                    </div>
+                    <div class="Songbox" id="song10">
+                    </div>
+                    <div class="Songbox" id="song11">
+                    </div>
+                    <div class="Songbox" id="song12">
+                    </div>
+                </div>
+
+                 <!-- Counter List -->
+                <div id="counter-list3">
+                    <div id="titleCounter">Time played</div>
+                    <div id="counter3">00:00:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container Player -->
+    <div id="container-player">
+
+        <!-- Player -->
+        <div id="Player">
+            
+            <!-- Music Controls -->
+            <div id="container-music">
+                <div id="current-song">
+                    <span id="cuSong"></span>
+                    by
+                    <span id="cuArtist"></span>
+                </div>
+                <div id="container-progressbar">
+                    <div id="progressBar"></div>
+                </div>
+                <div id="playTime">
+                    <span id="startTime">00:00</span>
+                    <span id="endTime">00:00</span>
+                </div>
+            </div>
+
+            <!-- Timer Controls -->
+            <div id="container-timer">
+                <div id="titleTimer">Set your time</div>
+                <div id="controlTimer">
+                    <input type="text" value="00:00:00" id="timerCount">
+                    <button id="btnStart" type="button">Start</button>
+                    <button id="btnReset" type="button">Reset all playlist</button>
+                </div>
+            </div>
+
+            <!-- Current Time -->
+            <div id="container-localtime">
+                <div id="currentTico">Local time</div>
+                <div id="currentTime"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Credits -->
+    <div id="credits">
+        Created by <strong>@malespinozah</strong>
+    </div>
+    
+</body>
+</html>
