@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Helper</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/d04a5fbe66.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- App Name -->
+    <div id="appName">MusicHelper</div>
+
+    <!-- Container Playlists -->
+    <div id="container-playlists"></div>
+
+    <!-- Container Player -->
+    <div id="container-player">
+
+        <!-- Player -->
+        <div id="Player">
+            
+            <!-- Music Controls -->
+            <div id="container-music">
+                <div id="current-song">
+                    <span id="cuSong"></span>
+                    by
+                    <span id="cuArtist"></span>
+                </div>
+                <div id="container-progressbar">
+                    <div id="progressBar"></div>
+                </div>
+            </div>
+
+            <!-- Timer Controls -->
+            <div id="container-timer">
+                <div>
+                    <div id="titleTimer">Set your time</div>
+                    <input type="text" value="00:00:00" id="timerCount" disabled>
+                </div>
+                <div id="controlTimer">
+                        <button id="btnStart" type="button" disabled>Start</button>
+                        <button id="btnReset" type="button" disabled>Reset all playlist</button>
+                </div>
+            </div>
+
+            <!-- Current Time -->
+            <div id="container-localtime">
+                <div id="currentTico">Local time</div>
+                <div id="currentTime"></div>
+            </div>
+
+            <div id="container-messages">
+                <p>Hello, friend!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Credits -->
+    <div id="credits">
+        Created by <strong>@malespinozah</strong>
+    </div>
+
+    <!-- Script -->
+    <script src="mh.js"></script>
+</body>
+</html>

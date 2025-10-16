@@ -1,0 +1,323 @@
+:root {
+    --purple: #800080;
+    --pink: #ffc0cb;
+    --black: #111;
+    --brand: #181818;
+    --color1: #919191;
+    --color2: #DADADA;
+    --color3: #494949;
+    --color4: #fff;
+    --color5: #F2F2F2;
+}
+
+/* Body */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--black);
+}
+
+/* App Name */
+
+#appName {
+    margin: 0% auto;
+    margin-top: 3%;
+    width: 40%;
+    border-radius: 50px;
+    border: 1px solid var(--color1);
+    background-color: var(--brand);
+    padding: 15px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans';
+    color: var(--color2);
+    letter-spacing: -3px;
+}
+
+/* Containers : playlists and its timer counts */
+#container-playlists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.container-playlist {
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 16px;
+    transition: all 0.5s;
+}
+
+.container-playlist:hover {
+    border-color: var(--color2);
+}
+
+
+.playlist {
+    width: 350px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    color: var(--black);
+}
+
+/* Cover Image Container */
+
+.cover-image {
+    width: 100%;
+    height: 250px;
+}
+
+/* Playlist Name */
+
+.Pname {
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--brand);
+    background: var(--color4);
+}
+
+/* Song Box and childs */
+
+.Songbox {
+    background-color:var(--color4);
+    border-top: 1px solid var(--color1);
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.Songbox:last-child {
+    border-bottom: 0;
+}
+
+.Songbox audio {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.Songbox .nameSong {
+    font-size: 15px;
+}
+
+.Songbox .authorSong {
+    font-size: 11px;
+    color: var(--color1);
+    font-weight: 300;
+}
+
+.counter {
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.counter > div {
+    color: var(--color3);
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Container : Player */
+
+#container-player {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#Player {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100px;
+    background-color: var(--color4);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 15px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--brand);
+    gap: 40px;
+}
+
+/* Container : Music */
+
+#container-music {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#current-song {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 13px;
+    font-style: italic;
+}
+
+#cuSong, #cuArtist {
+    display: block;
+    margin-right: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    font-style: normal;
+}
+
+#cuArtist {
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+#playTime {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Container : Progress Bar */
+
+#container-progressbar {
+    background-color: var(--color2);
+    height: 10px;
+    width: 100%;
+    position: relative;
+}
+
+#progressBar {
+    background-color: var(--brand);
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Container : Timer */
+
+#container-timer {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container-timer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+#titleTimer, #currentTico {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color3);
+}
+
+#timerCount {
+    width: 75px;
+    padding: 5px 0px;
+    border: 1px solid var(--color1);
+    border-radius: 6px;
+    text-align: center;
+    color: var(--color3);
+}
+
+#btnStart, #btnReset {
+    padding: 5px 8px;
+    font-family: 'IBM Plex Sans';
+    font-size: 12px;
+    background-color: var(--color5);
+    color: var(--color1);
+    border: none;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid var(--color1);
+    border-radius: 6px;
+}
+
+#btnStart:hover {
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
+#btnReset:hover {
+    background-color: var(--color3);
+    color: var(--color2);
+}
+
+/* Container :  Local Time */
+
+#container-localtime {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#currentTime {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color1);
+}
+
+#container-messages {
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    font-style: italic;
+    color: var(--color3);
+}
+
+#container-messages p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Credits */
+
+#credits {
+    background-color: var(--brand);
+    padding: 10px;
+    text-align: center;
+    font-weight: 200;
+    color: var(--color4);
+}
+
+#credits strong {
+    font-weight: 600;
+}
